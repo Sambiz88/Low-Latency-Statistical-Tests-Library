@@ -1,0 +1,10 @@
+Problem it solves :
+In C++, you must combine specialized libraries for linear algebra, 
+optimization, and probability distributions to achieve the same functionality.
+
+
+maybe make it work on all kinds of contiguous containers -> targets HPC stuff
+
+
+
+This is actually an interesting finding — your C++ implementation handles the zero-variance case gracefully via the S > 0 guard and the cleanTau/cleanRS filtering, while the Python library crashes on it. Your implementation is more robust on this edge case.
