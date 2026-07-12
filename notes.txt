@@ -8,3 +8,6 @@ maybe make it work on all kinds of contiguous containers -> targets HPC stuff
 
 
 This is actually an interesting finding — your C++ implementation handles the zero-variance case gracefully via the S > 0 guard and the cleanTau/cleanRS filtering, while the Python library crashes on it. Your implementation is more robust on this edge case.
+
+
+unit root: feature of time series data indicating that it is unpredictable and follows a random walk

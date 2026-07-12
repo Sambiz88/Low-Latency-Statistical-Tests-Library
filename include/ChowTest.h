@@ -1,4 +1,5 @@
-#include <type_traits
+#include <type_traits>
+#include <eigen3>
 
 template <typename Container>
 class ChowTest{

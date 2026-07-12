@@ -57,7 +57,7 @@ class HurstExponent{
             std::vector<double> logTau = computeLog(cleanTau);
             std::vector<double> logRs = computeLog(cleanRS);
 
-            // 5. OLS Regression
+            // 5. Simple OLS Regression
             const double sumX = std::accumulate(logTau.begin(), logTau.end(), 0.0);
             const double sumY = std::accumulate(logRs.begin(), logRs.end(), 0.0);
             const double sumXX = std::inner_product(logTau.begin(), logTau.end(), logTau.begin(), 0.0);

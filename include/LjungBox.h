@@ -5,7 +5,7 @@
 template <typename Container>
 Eigen::MatrixX4d LjungBox(const Container& residuals, const unsigned int maxLags, const unsigned int df){
 
-const size_t size = std::distance(std::begin(residuals), std::end(residuals));
+    const size_t size = std::distance(std::begin(residuals), std::end(residuals));
     
     // Allocate matrix exactly for the number of lags requested
     Eigen::MatrixX4d mat(maxLags, 4);
@@ -57,4 +57,4 @@ const size_t size = std::distance(std::begin(residuals), std::end(residuals));
 
     return mat;
 
-}
+};
