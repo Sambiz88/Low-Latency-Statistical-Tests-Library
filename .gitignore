@@ -1,3 +1,6 @@
 .venv
 *.o
 notes.txt
+*.so
+/build
+/examples

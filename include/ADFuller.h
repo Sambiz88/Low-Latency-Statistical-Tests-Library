@@ -14,8 +14,10 @@ class ADFuller{
         bool isAutoLag;
 
     public:
-        ADFuller() : isAutoLag(true) {}
-        ADFuller(const T& series) : series(series), isAutoLag(true) {}
+        ADFuller() = delete;
+        ADFuller(const T& series) : series(series), isAutoLag(true) {
+            run();
+        }
         // ADFuller(const T& series, int maxLag) : series(series), maxLag(maxLag), isAutoLag(false) {}
 
         double getTestStatistic() { return testStatistic; }

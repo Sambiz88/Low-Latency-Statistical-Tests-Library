@@ -109,6 +109,10 @@ public:
         return rss;
     }
 
+    const std::vector<float>& getResiduals(){
+        return residuals;
+    }
+
     private:
 
         std::vector<std::vector<float>> X;
