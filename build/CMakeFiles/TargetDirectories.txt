@@ -1,3 +1,0 @@
-/home/samy/Desktop/projects/statsLib/build/CMakeFiles/main.dir
-/home/samy/Desktop/projects/statsLib/build/CMakeFiles/edit_cache.dir
-/home/samy/Desktop/projects/statsLib/build/CMakeFiles/rebuild_cache.dir
