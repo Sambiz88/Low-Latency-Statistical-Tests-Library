@@ -12,7 +12,7 @@ template<typename Series>
 class HurstExponent{
     public:
         HurstExponent() : kind(""), H(0.0), c(0.0), isSimplified(false){}
-        HurstExponent(Series& timeSeries, std::string k, bool isSimplified) : timeSeries(timeSeries), isSimplified(isSimplified), H(0.0), c(0.0){
+        HurstExponent(const Series& timeSeries, std::string k, bool isSimplified) : timeSeries(timeSeries), isSimplified(isSimplified), H(0.0), c(0.0){
             if(k == "geometric"){
                 kind = k;
             }
@@ -30,7 +30,7 @@ class HurstExponent{
         }
 
     
-        void compute(Series& t, bool s, std::string k){
+        void compute(const Series& t, bool s, std::string k){
             timeSeries = t;
             isSimplified = s;
             kind = k;
